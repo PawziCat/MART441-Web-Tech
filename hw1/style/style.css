@@ -69,13 +69,13 @@ hr {
 }
 
 .second-paragraph {
-    color: #f8f8f8;
+    color: #ffffff;
     font-size: 18px;
     font-family: 'poppins-semibold', 'sans-serif';
     text-indent: 20px;
-    font-weight:500;
-    text-align: center;
+    text-align: left;
     line-height: 1.45em;
+    padding: 20px;
 }
 
 
@@ -132,41 +132,6 @@ a:hover {
 }
 
 
-/* black banner styling */
-.banner {
-    height: 250px;
-    width: 100%;
-    background-color: #000000;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 3.3em;
-    text-align: center;
-    letter-spacing: 0.2em;
-    float: center;
-}
-
-
-/* Banner image styling */
-.banner-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    justify-content: center;
-    float: center;
-}
-
-
-/* logo image styling */
-.logo-image {
-    width: 100%;
-    height: auto;
-    display: block;
-    float: center;
-}
-
-
 
 /* Set a fixed height for the carousel */
 #carouselExampleIndicators {
@@ -201,7 +166,7 @@ a:hover {
     max-width: 100%; /* Limits the width for readability */
     gap: 20px; /* Spacing between columns */
     padding: 5px 10px 5px 10px; /* Padding on top, bottom, and sides */
-    margin: 10px;
+    margin: 35px;
 }
 
 .grid-container-about {
@@ -233,12 +198,11 @@ a:hover {
     flex-direction: column;
     gap: 25px; /* Spacing between columns */
     padding: 5px 10px 5px 10px; /* Padding on top, bottom, and sides */
-    margin: 10px;
+    margin: 20px;
 }
 
 
 /* block styling */
-.column-left,
 .column-center,
 .column-right {
 
@@ -247,16 +211,92 @@ a:hover {
     text-align: center;
 }
 
-
-.left-section,
-.center-section,
-.right-section {
-
+.right-section,
+.center-section {
     background-color: #ffffff;
     text-align: center; /* Centers the text */
-
 }
 
+
+.column-left {
+    background-color: #ffc0a0; /* Right column background color */
+    padding: 25px;
+    text-align: center;
+    min-width: 50%;
+}
+
+.left-section {
+    background-color: #ffc0a0;
+    text-align: center; /* Centers the text */
+}
+
+
+/* green body block styling */
+.column-body-green {
+    background-color: #255857; /* body block background color */
+    padding: 25px;
+    text-align: center;
+}
+
+.body-section-green {
+    background-color: #255857;
+}
+
+/* peach body block styling */
+.column-body-peach {
+    background-color: #e47e6a; /* body block background color */
+    padding: 25px;
+    text-align: center;
+}
+
+.body-section-peach {
+    background-color: #e47e6a;
+}
+
+/* peach body block styling */
+.column-body-orange {
+    background-color: #ffc0a0; /* body block background color */
+    padding: 25px;
+    text-align: center;
+}
+
+.body-section-orange {
+    background-color: #ffc0a0;
+}
+
+/* pink body block styling */
+.column-body-pink {
+    background-color: #feebe1; /* body block background color */
+    padding: 25px;
+    text-align: center;
+}
+
+.body-section-pink {
+    background-color: #feebe1;
+}
+
+/* white body block styling */
+.column-body-white {
+    background-color: #ffffff; /* body block background color */
+    padding: 25px;
+    text-align: center;
+}
+
+.body-section-white {
+    background-color: #ffffff;
+}
+
+/* body block styling */
+.column-body {
+    background-color: #feebe100; /* body block background color */
+    padding: 0px;
+    text-align: center;
+}
+
+.body-section {
+    background-color: #feebe100;
+    max-width: 100%;
+}
 
 
 /* about block styling */
@@ -285,14 +325,14 @@ a:hover {
     background-color: #f8f8f8;
     display: fixed;
     height: 100%;
-    max-width: 800px; /* Limits the width for readability */
+    max-width: 865px; /* Limits the width for readability */
 }
 
 .left-section-about {
     text-align: center;
     background-color: #9bdeea;
     display: fixed;
-    max-width: 800px; /* Limits the width for readability */
+    max-width: 865px; /* Limits the width for readability */
 }
 
 .contact-section-about {
@@ -300,7 +340,7 @@ a:hover {
     align-items: center;
     background-color: #9bdeea;
     display: fixed;
-    max-width: 800px; /* Limits the width for readability */
+    max-width: 865px; /* Limits the width for readability */
 }
 
 
@@ -334,22 +374,24 @@ a:hover {
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-    background-color: #255857;
-    color: #feebe1;
+    background-color: #e47e6a;
+    color: #ffffff;
     cursor: pointer;
     padding: 18px;
     width: 100%;
+    max-height: 80%;
     border: none;
     text-align: center;
     outline: none;
-    font-size: 20px;
+    font-size: 21px;
     font-family: 'poppins-semibold', 'sans-serif';
   }
   
   /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
   .active, .collapsible:hover {
-    background-color: #e47e6a;
-    font-size: 22px;
+    background-color: #255857;
+    color: #ffffff;
+    font-size: 21px;
   }
   
   /* Style the collapsible content. Note: hidden by default */
@@ -362,12 +404,12 @@ a:hover {
   }
 
   .collapsible:after {
-    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    content: '\02795';/* Unicode character for "plus" sign (+) */
     font-size: 13px;
-    color: white;
-    float: right;
-    margin-left: 5px;
+    color: #ffffff;
+    float: left;
   }
+
 
 
   .contact-map-a {
@@ -375,13 +417,55 @@ a:hover {
 }  
 
 
+
+/* black banner styling */
+.banner {
+    height: 250px;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3.3em;
+    text-align: center;
+    letter-spacing: 0.2em;
+    float: center;
+}
+
+
+/* Banner image styling */
+.banner-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+    float: center;
+}
+
+
+/* logo image styling */
+.logo-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: center;
+}
+
+/* logo image styling */
+.hero-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: center;
+}
+
 .centered-image {
     max-width: 100%; /* Keeps image within column width */
     height: auto; /* Maintains aspect ratio */
     display: block; /* Removes inline spacing */
     margin: 0 auto; /* Centers image horizontally */
 }
-
 
  /* contact image */
 .about-image {
@@ -394,17 +478,27 @@ a:hover {
 
 
 /* Styling for author */
-#quote-author {
+#quote-author-green {
     font-size: 18px;
     color: #255857;;
     margin-top: 5px;
     text-align: center;
     font-family: 'poppins-semibold', 'sans-serif';
+    padding-right: 100px;
+    padding-left: 100px;
 }
 
-#quote-author-about {
+#quote-author-pink {
     font-size: 18px;
-    color: #f8f8f8;
+    color: #e47e6a;
+    margin-top: 5px;
+    text-align: center;
+    font-family: 'poppins-semibold', 'sans-serif';
+}
+
+#quote-author-white {
+    font-size: 18px;
+    color: #e47e6a;
     margin-top: 5px;
     text-align: center;
     font-family: 'poppins-semibold', 'sans-serif';
